@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxo Burger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1600x900/?burger') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            animation: slideDown 1s ease-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        img.logo {
+            width: 120px;
+        }
+        .btn-pedido {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e60000;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 50px;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+            transition: transform 0.3s;
+        }
+        .btn-pedido:hover {
+            transform: scale(1.1);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .menu {
+            margin: 40px auto;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .menu h2 {
+            color: #e60000;
+        }
+        .footer {
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .social a {
+            color: #e60000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="202501191213_eRB7_r.png" alt="Luxo Burger" class="logo">
+    </header>
+    
+    <section class="menu">
+        <h2>Cardápio</h2>
+        <p>🍔 Combo Luxo - R$ 23,00</p>
+        <p>🍔 Combo Puro Luxo - R$ 26,00</p>
+        <p>🍔 Combo Duplex - R$ 28,00</p>
+        <p>🍔 Combo Triplex - R$ 30,00</p>
+        <p>🍔 Casal de Luxo - R$ 50,00</p>
+    </section>
+    
+    <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/luxo-burger-artesanal-benfica/cc002229-cdd2-412d-8f35-e79dd9254def" class="btn-pedido" target="_blank">
+        Fazer Pedido
+    </a>
+    
+    <div class="social">
+        <p>Siga-nos: <a href="https://www.instagram.com/luxoburgerrj/" target="_blank">@luxoburgerrj</a></p>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Luxo Burger - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
